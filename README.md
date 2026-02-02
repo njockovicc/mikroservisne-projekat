@@ -10,7 +10,7 @@ Aplikacija je realizovana kao skup mikroservisa razvijenih u Java Spring okruže
 - Servis za notifikacije – slanje obaveštenja o rezervacijama i izmenama termina
 
 ## Tehnologije
-Java, Spring Boot, REST API, API Gateway, Eureka Service Discovery, JWT autentifikacija
+Java, Spring Boot, REST API, API Gateway, Eureka Service Discovery, JWT autentifikacija.
 
 ## Pokretanje projekta
 Svaki servis se pokreće kao zasebna Spring Boot aplikacija pomoću Maven komandi ili direktno iz IDE okruženja.
