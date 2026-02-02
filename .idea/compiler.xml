@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sport-api-gateway" />
+        <module name="sport-termini-service" />
+        <module name="sport-user-service" />
+        <module name="sport-eureka-server" />
+      </profile>
+      <profile name="Annotation profile for sport-notification-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="sport-notification-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sport-api-gateway" options="-parameters" />
+      <module name="sport-eureka-server" options="-parameters" />
+      <module name="sport-notification-service" options="-parameters" />
+      <module name="sport-termini-service" options="-parameters" />
+      <module name="sport-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
